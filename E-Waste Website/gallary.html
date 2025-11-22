@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <title>BLOG</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        header{
+            height: 100px;
+            background-color: #222;
+        }
+        body {
+            background-color: navajowhite;
+        }
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav img{
+            width: 150px;
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a{
+            color: burlywood;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .nav-links ul li::after{
+            content: '';
+            width: 0px;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }    
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        .row{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .posts{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        }
+        .posts-call{
+            flex-basis: 32%;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .posts-call img{
+            width: 100%; 
+            display: block;
+        }
+        footer{
+        height: 300px;
+        background-color: #222;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="posts">
+        <h1>Event Photo</h1>
+        <div class="row">
+            <div class="posts-call">
+                <img src="bengaluru.webp">
+                <h3>Next-Gen Muncipal Conference,Bengaluru.</h3>
+            </div>
+            <div class="posts-call">
+                <img src="delhi.jpeg">
+                <h3>Cleane e India,Delhi.</h3>
+            </div>
+            <div class="posts-call">
+                <img src="nagpur.jpg" height="255px">
+                <h3>IMA Conference,Nagpur.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="posts-call">
+                <img src="germany.jpeg" height="220px">
+                <h3>Battery Recycling Expo,Germany.</h3>
+            </div>
+            <div class="posts-call">
+                <img src="pune.webp">
+                <h3>E-waste and plastic collection,Pune.</h3>
+            </div>
+            <div class="posts-call">
+                <img src="hyderabad.webp">
+                <h3>E-waste Pickup drive,Hyderabad.</h3>
+            </div>
+        <div>
+        </section>
+    
+
+    <footer>
+        <p>Developed by Coders</p>
+    </footer>
+</body>
+</html>
